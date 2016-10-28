@@ -7,7 +7,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         body: this.get('body'),
-        timestamp: moment().format('LLLL')
+        timestamp: moment().format('LLLL'),
+        question: this.get('question')
       };
       if(params.author === '' || params.body === undefined) {
         alert("It looks like you still have an empty field in your answer form!");
