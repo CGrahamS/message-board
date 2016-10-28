@@ -6,10 +6,7 @@ export default Ember.Route.extend({
       questions: this.store.findAll('question')
     });
   },
-
-
-
-  // setupController(controller, models) {
-  //   controller.set('questions', models.questions);
-  // }
+  setupController(controller, models) {
+    controller.set('questions', models.questions);
+  }
 });
