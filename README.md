@@ -1,3 +1,7 @@
+# TODO
+  [ ] Write description
+  [ ] Confirm build commands
+
 # Message-board
 
 This README outlines the details of collaborating on this Ember application.
@@ -12,9 +16,9 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
-emberbootstrap
-embermoment
-emberfirebase
+* emberbootstrap
+* embermoment
+* emberfirebase
 
 ## Installation
 

@@ -1,0 +1,10 @@
+<h3>Post a New Question</h3>
+<form>
+  <label for="author">Author:</label>
+  {{input type="text" value=author id="author" class="form-control"}}
+  <label for="title">Question Title:</label>
+  {{input type="text" value=title id="title" class="form-control"}}
+  <label for="body">Question Description:</label>
+  {{textarea type="text" value=body id="body" class="form-control"}}
+  <button class="btn" {{action 'postQuestion'}}>Post Question!</button>
+</form>

@@ -4,5 +4,5 @@ export default DS.Model.extend({
   author: DS.attr('string'),
   title: DS.attr('string'),
   body: DS.attr('string'),
-  timestamp: DS.attr('date')
+  timestamp: DS.attr('string')
 });
