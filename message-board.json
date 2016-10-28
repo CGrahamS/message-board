@@ -1,0 +1,21 @@
+{
+  "questions": [{
+    "author": "Caleb Stevenson",
+    "title": "How do you deploy an Ember app on Firebase?",
+    "body": "Hello! I ran into a couple of issues trying to deploy my ember web app using firebase. Wondering if anyone has successfully done so and is willing to give me a few tips. Thanks!",
+    "timestamp": "2016-10-27"
+  },
+  {
+    "author": "Caleb Stevenson",
+    "title": "How much wood can a woodchuck, chuck?",
+    "body": "Just wondering.",
+    "timestamp": "2016-10-27"
+  },
+  {
+    "author": "Caleb Stevenson",
+    "title": "What sits in a corner but goes around the world?",
+    "body": "Trying to piece this riddle together...",
+    "timestamp": "2016-10-27"
+  }
+  ]
+}
