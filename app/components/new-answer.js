@@ -3,19 +3,17 @@ import moment from 'moment';
 
 export default Ember.Component.extend({
   actions: {
-    postQuestion() {
+    postAnswer() {
       var params = {
         author: this.get('author'),
-        title: this.get('title'),
         body: this.get('body'),
         timestamp: moment().format('LLLL')
       };
-      if (params.author === '' || params.title === undefined || params.body === undefined) {
-        alert("It looks like you still have an empty field in your question form!");
+      if(params.author === '' || params.body === undefined) {
+        alert("It looks like you still have an empty field in your answer form!");
       } else {
-        this.sendAction('postQuestion', params);
+        this.sendAction('postAnswer', params);
         this.set('author', '');
-        this.set('title', '');
         this.set('body', '');
       }
     }
