@@ -1,0 +1,28 @@
+.page-header {
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.home-page-header {
+  text-align: center;
+}
+
+.question-tile {
+  height: 150px;
+}
+
+.question-tile h4,
+.question-tile h5 {
+  text-align: center;
+}
+
+.btn {
+  margin: 1% 0;
+}
+
+.new-question-btn {
+  margin: 1% 25%;
+}

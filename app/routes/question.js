@@ -9,8 +9,6 @@ export default Ember.Route.extend({
   },
   actions: {
     postAnswer(params) {
-      alert("q-r-postanswer");
-      console.log(params);
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
       question.get('answers').addObject(newAnswer);

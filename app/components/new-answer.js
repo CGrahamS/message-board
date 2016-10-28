@@ -22,6 +22,8 @@ export default Ember.Component.extend({
     },
     showNewAnswer() {
       this.set('newAnswerHidden', false);
+      this.set('author', '');
+      this.set('body', '');
     },
     cancelAnswer() {
       this.set('newAnswerHidden', true);

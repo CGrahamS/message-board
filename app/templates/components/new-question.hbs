@@ -1,5 +1,5 @@
 {{#if newQuestionHidden}}
-<button class="btn" {{action 'showNewQuestion'}}>Post a New Question</button>
+<button class="btn new-question-btn" {{action 'showNewQuestion'}}>New Question</button>
 {{else}}
 <form>
   <label for="author">Author:</label>
@@ -9,6 +9,6 @@
   <label for="body">Question Description:</label>
   {{textarea type="text" value=body id="body" class="form-control"}}
   <button class="btn" {{action 'postQuestion'}}>Post Question!</button>
-  <button class="btn" {{action 'cancelQuestion'}}>Cancel</button>  
+  <button class="btn" {{action 'cancelQuestion'}}>Cancel</button>
 </form>
 {{/if}}
