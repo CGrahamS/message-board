@@ -1,8 +1,12 @@
-<h3>Add new Answer</h3>
+{{#if newAnswerHidden}}
+<button class="btn" {{action 'showNewAnswer'}}>New Answer</button>
+{{else}}
 <form>
   <label for="author">Author:</label>
   {{input class="form-control" value=author id="author"}}
   <label for="body">Answer:</label>
   {{textarea class="form-control" value=body id="body"}}
   <button class="btn" {{action 'postAnswer'}}>Post Answer</button>
+  <button class="btn" {{action 'cancelAnswer'}}>Cancel</button>
 </form>
+{{/if}}

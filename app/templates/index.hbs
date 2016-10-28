@@ -1,8 +1,8 @@
 <h2>Home Page</h2>
 
-{{new-question postQuestion="postQuestion"}}
-
 <h3>Recent Questions</h3>
 {{#each questions as | question |}}
   {{question-tile question=question}}
 {{/each}}
+
+{{new-question postQuestion="postQuestion"}}

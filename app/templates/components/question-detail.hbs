@@ -1,8 +1,10 @@
 <h3 class="question-detail">{{question.title}}</h3>
-<h4 class="question-sub-header">asked by {{question.author}} {{moment-from-now question.timestamp}}</h4>
+<h4 class="question-sub-header">Asked by {{question.author}} {{moment-from-now question.timestamp}}</h4>
 <p class="question-body">
   {{question.body}}
 </p>
+<hr>
+<h3>Answers:</h3>
 {{#each question.answers as | answer |}}
   {{answer-tile answer=answer}}
 {{/each}}
