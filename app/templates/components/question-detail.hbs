@@ -2,6 +2,7 @@
 <h4 class="question-sub-header">Asked by {{question.author}} {{moment-from-now question.timestamp}}</h4>
 <p class="question-body">
   {{question.body}}
+  {{update-question question=question updateQuestion="updateQuestion"}}
 </p>
 <hr>
 <h3>Answers:</h3>
