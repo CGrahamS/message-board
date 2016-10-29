@@ -1,20 +1,14 @@
 <div class="home-page-header">
-  <h2>What are you wondering?</h2>
+  <h2> What are <em>you</em> wondering?</h2>
   <h3>Recent Questions</h3>
 </div>
-<div class="row">
-  <div class="col-md-10 col-md-offset-1">
-    <div class="row">
-      {{#each questions as | question |}}
-        <div class="col-md-6">
-          {{question-tile question=question}}
-        </div>
-      {{/each}}
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        {{new-question postQuestion="postQuestion"}}
+  <div class="row">
+    {{#each questions as | question |}}
+      <div class="col-md-6">
+        {{question-tile question=question}}
       </div>
-    </div>
+    {{/each}}
   </div>
-</div>
+  <div class="col-md-12">
+    {{new-question postQuestion="postQuestion"}}
+  </div>
