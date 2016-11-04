@@ -1,5 +1,11 @@
-{{log model}}
 
-{{#each model as |question|}}
-  {{favorite-questions-tile question=question}}
-{{/each}}
+{{#if model}}
+  <h3>Favorite Questions:</h3>
+  {{#each model as |question|}}
+    <div class="favorite-question-tiles">
+      {{favorite-questions-tile question=question}}
+    </div>
+  {{/each}}
+{{else}}
+  <h3>No favorite questions yet!</h3>
+{{/if}}

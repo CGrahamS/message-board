@@ -3,6 +3,7 @@
 body {
   background-color: white;
   font-family: 'Actor', sans-serif;
+  color: #666547;
   padding-top: 30px
 }
 
@@ -43,7 +44,7 @@ a:hover {
 
 .home-page-header {
   text-align: center;
-  color: #666547;
+  /*color: #666547;*/
 }
 
 .question-tile {
@@ -76,4 +77,8 @@ a:hover {
   transition: 0.5s ease-in;
   color: rgba(251,46,1, 0.7 );
   background-color: rgba(111, 203, 159, 0.3 );
+}
+
+.favorite-question-tiles {
+  margin-top: 3%;
 }

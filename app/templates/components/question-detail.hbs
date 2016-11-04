@@ -5,6 +5,7 @@
   {{update-question question=question updateQuestion="updateQuestion"}}
 </p>
 <button {{action 'addFavoriteQuestion' question}} class="btn">Favorite</button>
+{{favorited question favorites}}
 <hr>
 <h3>Answers:</h3>
 {{#each question.answers as | answer |}}
