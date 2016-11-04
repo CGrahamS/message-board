@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Actor|Bungee+Outline');
+@import url('https://fonts.googleapis.com/css?family=Actor|Fugaz+One');
 
 body {
   background-color: white;
@@ -20,18 +20,10 @@ body {
 }
 
 .main-header {
-  color: 	#fb2e01;
-  font-family: 'Bungee Outline';
-  text-decoration: none;
-  text-shadow: 1px 1px black, 2px 0px black, 4px 0px black;
-}
-
-.header-stripe {
-  height: 50px;
-  margin: 100px;
-  position: absolute;
-  background-color: white;
-  opacity: 0.4;
+  color: 	#e24422;
+  font-family: 'Fugaz One';
+  font-size: 3.5em;
+  background-color: rgba(111, 203, 159, 0.7 );
 }
 
 a:hover {
@@ -40,10 +32,13 @@ a:hover {
 
 .question-tile {
   color: #666547;
+  transition: 0.5s ease-out;
 }
 
 .question-tile:hover {
-  opacity: 0.5;
+  transition: 0.5s ease-in;
+  color: rgba(251,46,1, 0.7 );
+  background-color: rgba(111, 203, 159, 0.3 );
 }
 
 .home-page-header {
@@ -52,7 +47,8 @@ a:hover {
 }
 
 .question-tile {
-  height: 100px;
+  padding: auto;
+  height: 150px;
 }
 
 .question-tile h4,
@@ -62,8 +58,22 @@ a:hover {
 
 .btn {
   margin: 1% 0;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover {
+  transition: 0.5s ease-in;
+  color: rgba(251,46,1, 0.7 );
+  background-color: rgba(111, 203, 159, 0.3 );
 }
 
 .new-question-btn {
   margin: 1% 40%;
+  transition: 0.5s ease-out;
+}
+
+.new-question-btn:hover {
+  transition: 0.5s ease-in;
+  color: rgba(251,46,1, 0.7 );
+  background-color: rgba(111, 203, 159, 0.3 );
 }
