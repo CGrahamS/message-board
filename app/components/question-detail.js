@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       this.sendAction('postAnswer', params);
     },
     addFavoriteQuestion(question) {
-      this.get('favoriteQuestions').addFavoriteQuestion(question); 
+      this.get('favoriteQuestions').addFavoriteQuestion(question);
     }
   }
 });
