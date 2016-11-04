@@ -1,0 +1,8 @@
+{{#link-to 'question' question.id}}
+{{log question}}
+<div class="well question-tile">
+  <h4>{{question.title}}</h4>
+  <h5>Asked by {{question.author}}, {{moment-from-now question.timestamp}}.</h5>
+  <h5>{{totalAnswers}}</h5>
+</div>
+{{/link-to}}

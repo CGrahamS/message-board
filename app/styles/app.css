@@ -3,6 +3,7 @@
 body {
   background-color: white;
   font-family: 'Actor', sans-serif;
+  padding-top: 30px
 }
 
 .header {
@@ -18,26 +19,16 @@ body {
   height: 200px;
 }
 
-.header a {
+.main-header {
   color: 	#fb2e01;
   font-family: 'Bungee Outline';
   text-decoration: none;
-  position: absolute;
-  margin: -5.5% 25% 0 -15%;
   text-shadow: 1px 1px black, 2px 0px black, 4px 0px black;
-}
-
-.header a:hover {
-  opacity: 0.4;
-}
-
-.header h1 {
-  font-size: 3em;
 }
 
 .header-stripe {
   height: 50px;
-  margin: 100px
+  margin: 100px;
   position: absolute;
   background-color: white;
   opacity: 0.4;

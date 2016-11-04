@@ -1,12 +1,15 @@
 <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar navbar-nav">
+      <li>{{#link-to 'index'}}HOME{{/link-to}}</li>
+      <li>{{#link-to 'favorite-questions'}}FAVORITES{{/link-to}}</li>
+    </ul>
+  </nav>
   <div class="row">
     <div class="col-md-12 header">
       <div class="header-stripe">
-
       </div>
-      {{#link-to 'index'}}
-        <h1>Message Board</h1>
-      {{/link-to}}
+        <h1 class="main-header">Message Board</h1>
     </div>
     <div class="col-md-10 col-md-offset-1">
       {{outlet}}
