@@ -2,10 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   favorites: [],
-  addFavoriteQuestion(question) {
+  toggleFavorited(question) {
+    console.log(this.favorites);
     if (this.get('favorites').includes(question)) {
-      alert("You've already favorited this question!");
+      console.error("Remove!");
+      this.get('favorites').removeObject(question);
     } else {
+      console.info('Push');
       this.get('favorites').pushObject(question);
     }
   }

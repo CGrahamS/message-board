@@ -5,7 +5,8 @@
   <div class="row">
     {{#each questions as | question |}}
       <div class="col-md-6">
-        {{question-tile question=question}}
+        {{log favorites}}
+        {{question-tile question=question favorites=favorites}}
       </div>
     {{/each}}
   </div>
