@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   favoriteQuestions: Ember.inject.service(),
-  // isFavorited: this.get('favoriteQuestions').get('favorites').includes(this.get('question')),
   actions: {
     updateQuestion(question, params) {
       this.sendAction('updateQuestion', question, params);
@@ -12,6 +11,9 @@ export default Ember.Component.extend({
     },
     toggleFavorited(question) {
       this.get('favoriteQuestions').toggleFavorited(question);
+    },
+    deleteQuestion(question) {
+      this.sendAction('deleteQuestion', question);
     }
   }
 });

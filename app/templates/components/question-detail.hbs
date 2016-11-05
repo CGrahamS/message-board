@@ -4,6 +4,7 @@
   {{question.body}}
   {{update-question question=question updateQuestion="updateQuestion"}}
 </p>
+<button {{action 'deleteQuestion' question}} class="btn">Delete</button>
 <button {{action 'toggleFavorited' question}} class="btn">Toggle Favorite</button>
 <hr>
 <h3>Answers:</h3>
